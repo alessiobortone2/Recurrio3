@@ -8,6 +8,8 @@
 
 import UIKit
 
+let initialWeight: Float = 50.0
+var currentWeight: Float = 45.0
 var product = ["Mayonnaise", "Milk", "Hendricks", "Wine"]
 var productDesc = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
 var percentage = ["33 %", "21 %", "10 %", "48 %"]
