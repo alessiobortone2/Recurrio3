@@ -8,6 +8,22 @@
 
 import UIKit
 
+class Product {
+    let name: String
+    let initialWeight: Float
+    var currentWeight: Float
+    init(initialWeight: Float, name: String) {
+        self.initialWeight = initialWeight
+        self.name = name
+        self.currentWeight = initialWeight
+    }
+    
+    func updateWeight(weight: Float) {
+        self.currentWeight = weight
+    }
+    
+}
+
 let initialWeight: Float = 50.0
 var currentWeight: Float = 45.0
 var product = ["Mayonnaise", "Milk", "Hendricks", "Wine"]
