@@ -26,7 +26,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = product[indexPath.row] + percentage[indexPath.row]
+        cell.textLabel?.text = product[indexPath.row] + " " + percentage[indexPath.row]
 
         return cell
     }
