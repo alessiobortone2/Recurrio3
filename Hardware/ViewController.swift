@@ -19,10 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        titleLabel.text = pets[myIndex]
+        titleLabel.text = product[myIndex]
         h2Label.text = percentage[myIndex]
-        descLabel.text = petDesc[myIndex]
-        myImageView.image = UIImage(named: pets[myIndex])
+        descLabel.text = productDesc[myIndex]
+        myImageView.image = UIImage(named: product[myIndex])
         
     }
 
