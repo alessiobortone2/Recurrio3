@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
-    
+    @IBOutlet weak var h2Label: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     
     override func viewDidLoad() {
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         titleLabel.text = pets[myIndex]
+        h2Label.text = percentage[myIndex]
         descLabel.text = petDesc[myIndex]
         myImageView.image = UIImage(named: pets[myIndex])
         

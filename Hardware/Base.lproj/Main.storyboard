@@ -43,9 +43,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Animals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-Q3-cWD">
-                                <rect key="frame" x="64" y="58" width="247" height="56"/>
+                                <rect key="frame" x="64" y="29" width="247" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F6-QW-nim">
+                                <rect key="frame" x="143" y="104" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Percentage"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="descLabel" destination="HgH-8N-QGL" id="vqB-Mi-rWz"/>
+                        <outlet property="h2Label" destination="0F6-QW-nim" id="VyO-SD-KL8"/>
                         <outlet property="myImageView" destination="Ngs-aJ-JZd" id="a6w-WJ-02I"/>
                         <outlet property="titleLabel" destination="9Di-Q3-cWD" id="SDb-7y-Fwn"/>
                     </connections>
