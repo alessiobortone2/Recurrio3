@@ -10,6 +10,7 @@ import UIKit
 
 var pets = ["Mayonnaise", "Milk", "Hendricks", "Wine"]
 var petDesc = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
+var percentage = ["33 %", "21 %", "10 %", "48 %"]
 var myIndex = 0
 
 class TableViewController: UITableViewController {
@@ -25,7 +26,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = pets[indexPath.row]
+        cell.textLabel?.text = pets[indexPath.row] + percentage[indexPath.row]
 
         return cell
     }
