@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreData
 
 class HardwareUITests: XCTestCase {
         
@@ -31,10 +32,6 @@ class HardwareUITests: XCTestCase {
     func testForTable() {
         
         let app = XCUIApplication()
-
-        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["Mayonnaise 33 %"]/*[[".cells.staticTexts[\"Mayonnaise 33 %\"]",".staticTexts[\"Mayonnaise 33 %\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["Button"].tap()
-        app.buttons["Back"].tap()
         let table = app.tables.element(boundBy: 0)
         XCTAssertEqual(app.tables.count, 1)
         XCTAssertEqual(table.cells.count, 4)
@@ -42,9 +39,25 @@ class HardwareUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testForButton() {
+    func testForButtons() {
         let app = XCUIApplication()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 10 %"]/*[[".cells.staticTexts[\"Hendricks 10 %\"]",".staticTexts[\"Hendricks 10 %\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 100%"]/*[[".cells.staticTexts[\"Hendricks 100%\"]",".staticTexts[\"Hendricks 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         XCTAssertEqual(app.buttons.count, 2)
+    }
+    
+    func testForPerecentage() {
+        let app = XCUIApplication()
+        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Mayonnaise 100%"]/*[[".cells.staticTexts[\"Mayonnaise 100%\"]",".staticTexts[\"Mayonnaise 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Button"].tap()
+        XCTAssert(app.staticTexts["90%"].exists)
+    }
+    
+    func testForImage() {
+        let app = XCUIApplication()
+        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 100%"]/*[[".cells.staticTexts[\"Hendricks 100%\"]",".staticTexts[\"Hendricks 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let imageView = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element
+        let count = imageView.images.count
+        XCTAssert(count != 0)
+        
     }
 }
