@@ -60,4 +60,25 @@ class HardwareUITests: XCTestCase {
         XCTAssert(count != 0)
         
     }
+    
+    func testForCellTextInTable() {
+        let app = XCUIApplication()
+        XCTAssert(app.staticTexts["Hendricks 100%"].exists)
+    }
+    
+    func testForCellPercentageToChange() {
+        let app = XCUIApplication()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Wine 100%"]/*[[".cells.staticTexts[\"Wine 100%\"]",".staticTexts[\"Wine 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Button"].tap()
+        app.buttons["Back"].tap()
+        XCTAssert(app.staticTexts["Wine 92%"].exists)
+    }
+    
+    func testForPageToHaveADescription() {
+        let app = XCUIApplication()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Wine 100%"]/*[[".cells.staticTexts[\"Wine 100%\"]",".staticTexts[\"Wine 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        XCTAssert(app.staticTexts["Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian"].exists)
+    }
+    
+    
 }
