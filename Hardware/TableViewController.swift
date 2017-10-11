@@ -16,28 +16,21 @@ var percentage = ["33 %", "21 %", "10 %", "48 %"]
 var myIndex = 0
 
 class TableViewController: UITableViewController {
-
-
+    
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return product.count
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
         cell.textLabel?.text = product[indexPath.row] + " " + percentage[indexPath.row]
-
         return cell
     }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
     }
-    
-
 }

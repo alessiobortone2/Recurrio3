@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-//    didSet {
-//    }
     var productLevel = currentWeight/initialWeight
     
     @IBOutlet weak var progressBar: UIProgressView!
@@ -43,7 +40,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 

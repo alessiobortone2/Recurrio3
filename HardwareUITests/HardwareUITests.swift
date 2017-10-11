@@ -28,9 +28,23 @@ class HardwareUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testForTable() {
+        
+        let app = XCUIApplication()
+
+        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["Mayonnaise 33 %"]/*[[".cells.staticTexts[\"Mayonnaise 33 %\"]",".staticTexts[\"Mayonnaise 33 %\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Button"].tap()
+        app.buttons["Back"].tap()
+        let table = app.tables.element(boundBy: 0)
+        XCTAssertEqual(app.tables.count, 1)
+        XCTAssertEqual(table.cells.count, 4)
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testForButton() {
+        let app = XCUIApplication()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 10 %"]/*[[".cells.staticTexts[\"Hendricks 10 %\"]",".staticTexts[\"Hendricks 10 %\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        XCTAssertEqual(app.buttons.count, 2)
+    }
 }
