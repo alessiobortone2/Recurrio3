@@ -9,9 +9,13 @@
 import UIKit
 
 class Product {
+    
+    // MARK: - State variables
     let name, productDesc: String
     let initialWeight: Float
     var currentWeight: Float
+    
+    // MARK: - Initializer
     init(initialWeight: Float, name: String, productDesc: String) {
         self.initialWeight = initialWeight
         self.name = name
@@ -19,10 +23,13 @@ class Product {
         self.productDesc = productDesc
     }
     
+}
+
+// MARK: - Public Methods
+extension Product {
     func updateWeight(weight: Float) {
         self.currentWeight = weight
     }
-    
 }
 
 var productDescriptions = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
