@@ -20,6 +20,9 @@
 		86AEED131F8E2AB400E67A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592AF1F8BD0EA0043C543 /* ViewController.swift */; };
 		86AEED141F8E2AB800E67A08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEED0C1F8CE60000E67A08 /* TableViewController.swift */; };
 		86AEED151F8E2AB900E67A08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEED0C1F8CE60000E67A08 /* TableViewController.swift */; };
+		BEAC4F3C1F8E6BBA0084533E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC4F3B1F8E6BBA0084533E /* Product.swift */; };
+		BEAC4F3D1F8E73960084533E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC4F3B1F8E6BBA0084533E /* Product.swift */; };
+		BEAC4F3E1F8E73970084533E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC4F3B1F8E6BBA0084533E /* Product.swift */; };
 		DE371B6DAC9DB1BF9A438136 /* Pods_Hardware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BAC965031153264F86E8AF /* Pods_Hardware.framework */; };
 		F2966DEC46EB753077984617 /* Pods_HardwareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D5989B5113096AC86ED953 /* Pods_HardwareTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,7 @@
 		7D7592CD1F8BD0EA0043C543 /* HardwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareUITests.swift; sourceTree = "<group>"; };
 		7D7592CF1F8BD0EA0043C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86AEED0C1F8CE60000E67A08 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BEAC4F3B1F8E6BBA0084533E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C4D5989B5113096AC86ED953 /* Pods_HardwareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardwareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C194D94763F628970EFBCF /* Pods-Hardware.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hardware.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hardware/Pods-Hardware.debug.xcconfig"; sourceTree = "<group>"; };
 		F7A5B081ADB38F255AB3285D /* Pods-Hardware.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hardware.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hardware/Pods-Hardware.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				7D7592AD1F8BD0EA0043C543 /* AppDelegate.swift */,
+				BEAC4F3B1F8E6BBA0084533E /* Product.swift */,
 				7D7592AF1F8BD0EA0043C543 /* ViewController.swift */,
 				86AEED0C1F8CE60000E67A08 /* TableViewController.swift */,
 				7D7592B11F8BD0EA0043C543 /* Main.storyboard */,
@@ -463,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7592B01F8BD0EA0043C543 /* ViewController.swift in Sources */,
+				BEAC4F3C1F8E6BBA0084533E /* Product.swift in Sources */,
 				86AEED0D1F8CE60000E67A08 /* TableViewController.swift in Sources */,
 				7D7592AE1F8BD0EA0043C543 /* AppDelegate.swift in Sources */,
 			);
@@ -473,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86AEED121F8E2AB300E67A08 /* ViewController.swift in Sources */,
+				BEAC4F3D1F8E73960084533E /* Product.swift in Sources */,
 				86AEED141F8E2AB800E67A08 /* TableViewController.swift in Sources */,
 				7D7592C31F8BD0EA0043C543 /* HardwareTests.swift in Sources */,
 			);
@@ -483,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86AEED131F8E2AB400E67A08 /* ViewController.swift in Sources */,
+				BEAC4F3E1F8E73970084533E /* Product.swift in Sources */,
 				86AEED151F8E2AB900E67A08 /* TableViewController.swift in Sources */,
 				7D7592CE1F8BD0EA0043C543 /* HardwareUITests.swift in Sources */,
 			);

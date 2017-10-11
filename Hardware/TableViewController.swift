@@ -8,29 +8,7 @@
 
 import UIKit
 
-class Product {
-    
-    // MARK: - State variables
-    let name, productDesc: String
-    let initialWeight: Float
-    var currentWeight: Float
-    
-    // MARK: - Initializer
-    init(initialWeight: Float, name: String, productDesc: String) {
-        self.initialWeight = initialWeight
-        self.name = name
-        self.currentWeight = initialWeight
-        self.productDesc = productDesc
-    }
-    
-}
-
-// MARK: - Public Methods
-extension Product {
-    func updateWeight(weight: Float) {
-        self.currentWeight = weight
-    }
-}
+// MARK: - Instantiate items for table
 
 var productDescriptions = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
 
@@ -39,15 +17,14 @@ let product2 = Product(initialWeight: 150.0, name: "Milk", productDesc: productD
 let product3 = Product(initialWeight: 100.0, name: "Hendricks", productDesc: productDescriptions[2])
 let product4 = Product(initialWeight: 70.0, name: "Wine", productDesc: productDescriptions[3])
 
-//let initialWeight: Float = 50.0
-//var currentWeight: Float = 45.0
 var productArray  : [Product] = [product1, product2, product3, product4]
-//var percentage = ["33 %", "21 %", "10 %", "48 %"]
 var myIndex = 0
 
+
+
+// MARK: - Table view data source
 class TableViewController: UITableViewController {
-    
-    // MARK: - Table view data source
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
