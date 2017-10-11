@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var productLevel = currentWeight/initialWeight
-    
+    var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
+
     @IBOutlet weak var progressBar: UIProgressView!
     @IBAction func startButton(_ sender: Any) {
-        currentWeight -= 5
-        productLevel = currentWeight/initialWeight
+        productArray[myIndex].currentWeight -= 5
+        productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
         progressBar.setProgress(productLevel, animated: false)
         h2Label.text = String(Int(productLevel*100)) + "%"
     }
@@ -28,10 +28,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        titleLabel.text = product[myIndex]
+        titleLabel.text = productArray[myIndex].name
         h2Label.text = (String(Int(productLevel*100)) + "%")
-        descLabel.text = productDesc[myIndex]
-        myImageView.image = UIImage(named: product[myIndex])
+        descLabel.text = productArray[myIndex].productDesc
+        myImageView.image = UIImage(named: productArray[myIndex].name)
         progressBar.setProgress(productLevel, animated: false)
         
     }
