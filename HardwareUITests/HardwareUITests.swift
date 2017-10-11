@@ -32,7 +32,7 @@ class HardwareUITests: XCTestCase {
         
         let app = XCUIApplication()
 
-        app.tables/*@START_MENU_TOKEN@*/.cells.staticTexts["Mayonnaise 33 %"]/*[[".cells.staticTexts[\"Mayonnaise 33 %\"]",".staticTexts[\"Mayonnaise 33 %\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app.tables.cells.staticTexts["Mayonnaise 100%"].tap()
         app.buttons["Button"].tap()
         app.buttons["Back"].tap()
         let table = app.tables.element(boundBy: 0)
@@ -44,7 +44,7 @@ class HardwareUITests: XCTestCase {
     
     func testForButton() {
         let app = XCUIApplication()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 10 %"]/*[[".cells.staticTexts[\"Hendricks 10 %\"]",".staticTexts[\"Hendricks 10 %\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables.staticTexts["Hendricks 100%"].tap()
         XCTAssertEqual(app.buttons.count, 2)
     }
 }
