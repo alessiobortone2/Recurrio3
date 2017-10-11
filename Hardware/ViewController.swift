@@ -10,11 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-//    didSet {
-//    }
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
-    
+
     @IBOutlet weak var progressBar: UIProgressView!
     @IBAction func startButton(_ sender: Any) {
         productArray[myIndex].currentWeight -= 5
@@ -43,7 +40,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 

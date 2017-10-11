@@ -16,6 +16,10 @@
 		7D7592C31F8BD0EA0043C543 /* HardwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592C21F8BD0EA0043C543 /* HardwareTests.swift */; };
 		7D7592CE1F8BD0EA0043C543 /* HardwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592CD1F8BD0EA0043C543 /* HardwareUITests.swift */; };
 		86AEED0D1F8CE60000E67A08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEED0C1F8CE60000E67A08 /* TableViewController.swift */; };
+		86AEED121F8E2AB300E67A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592AF1F8BD0EA0043C543 /* ViewController.swift */; };
+		86AEED131F8E2AB400E67A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592AF1F8BD0EA0043C543 /* ViewController.swift */; };
+		86AEED141F8E2AB800E67A08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEED0C1F8CE60000E67A08 /* TableViewController.swift */; };
+		86AEED151F8E2AB900E67A08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AEED0C1F8CE60000E67A08 /* TableViewController.swift */; };
 		DE371B6DAC9DB1BF9A438136 /* Pods_Hardware.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74BAC965031153264F86E8AF /* Pods_Hardware.framework */; };
 		F2966DEC46EB753077984617 /* Pods_HardwareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D5989B5113096AC86ED953 /* Pods_HardwareTests.framework */; };
 /* End PBXBuildFile section */
@@ -468,6 +472,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AEED121F8E2AB300E67A08 /* ViewController.swift in Sources */,
+				86AEED141F8E2AB800E67A08 /* TableViewController.swift in Sources */,
 				7D7592C31F8BD0EA0043C543 /* HardwareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86AEED131F8E2AB400E67A08 /* ViewController.swift in Sources */,
+				86AEED151F8E2AB900E67A08 /* TableViewController.swift in Sources */,
 				7D7592CE1F8BD0EA0043C543 /* HardwareUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
