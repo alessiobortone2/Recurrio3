@@ -41,7 +41,7 @@ class HardwareUITests: XCTestCase {
     
     func testForButtons() {
         let app = XCUIApplication()
-        XCUIApplication().tables/*@START_MENU_TOKEN@*/.staticTexts["Hendricks 100%"]/*[[".cells.staticTexts[\"Hendricks 100%\"]",".staticTexts[\"Hendricks 100%\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.tables.staticTexts["Hendricks 100%"].tap()
         XCTAssertEqual(app.buttons.count, 2)
     }
     
