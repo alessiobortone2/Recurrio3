@@ -49,4 +49,23 @@ As a User,
 so that I can flick through from one group of sensors (tray) to the other, 
 I want to have a Navigation Tab, covering products in the Fridge, Bathroom, Pantry and so on.
 
+As a User,
+so that I can test the prototype in real life,
+I want to discover & receive data from my peripheral
+
+As a User,
+so that I can visualise levels of products,
+I want to use that data to update the levels
+
+As a User,
+so that I can make the system work,
+I want to be able to transmit data from Arduino (HW feature)
+
+As a User,
+so that I can sign in and store my credit card securely,
+I want to be able to Login With Amazon (LWA)
+
+As a User,
+so that I can re-order automatically,
+I want to be able to connect with DRS (Dash Replenishment Service)
 
