@@ -8,8 +8,6 @@
 
 import UIKit
 
-// MARK: - Instantiate items for table
-
 var productDescriptions = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
 
 let product1 = Product(initialWeight: 50.0, name: "Mayonnaise", productDesc: productDescriptions[0])
@@ -18,6 +16,7 @@ let product3 = Product(initialWeight: 100.0, name: "Hendricks", productDesc: pro
 let product4 = Product(initialWeight: 70.0, name: "Wine", productDesc: productDescriptions[3])
 
 var productArray  : [Product] = [product1, product2, product3, product4]
+
 var myIndex = 0
 
 
