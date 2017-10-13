@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
     @IBOutlet weak var progressBar: UIProgressView!
+    
     @IBAction func startButton(_ sender: Any) {
         productArray[myIndex].currentWeight -= 5
         productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
@@ -33,7 +34,6 @@ class ViewController: UIViewController {
         descLabel.text = productArray[myIndex].productDesc
         myImageView.image = UIImage(named: productArray[myIndex].name)
         progressBar.setProgress(productLevel, animated: false)
-        
     }
 
     override func didReceiveMemoryWarning() {
