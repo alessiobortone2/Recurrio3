@@ -8,29 +8,6 @@
 
 import UIKit
 
-class Product {
-    
-    // MARK: - State variables
-    let name, productDesc: String
-    let initialWeight: Float
-    var currentWeight: Float
-    
-    // MARK: - Initializer
-    init(initialWeight: Float, name: String, productDesc: String) {
-        self.initialWeight = initialWeight
-        self.name = name
-        self.currentWeight = initialWeight
-        self.productDesc = productDesc
-    }
-}
-
-// MARK: - Public Methods
-extension Product {
-    func updateWeight(weight: Float) {
-        self.currentWeight = weight
-    }
-}
-
 var productDescriptions = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
 
 let product1 = Product(initialWeight: 50.0, name: "Mayonnaise", productDesc: productDescriptions[0])
@@ -42,9 +19,11 @@ var productArray  : [Product] = [product1, product2, product3, product4]
 
 var myIndex = 0
 
+
+
+// MARK: - Table view data source
 class TableViewController: UITableViewController {
-    
-    // MARK: - Table view data source
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
