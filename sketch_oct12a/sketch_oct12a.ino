@@ -4,19 +4,67 @@ Then connect one end of a 10K resistor from Analog 0 to ground
 int fsrPin = 0;     // the FSR and 10K pulldown are connected to a0
 int fsrReading;     // the analog reading from the FSR resistor divider
 int ledPin = 13;
+
+const int numReadings = 10;
+
+int readings[numReadings];
+int readIndex = 0;
+int total = 0;
+int average = 0;
+
 String readString;
 
 void setup(void) {
   Serial.begin(9600);   
   pinMode(ledPin, OUTPUT);
+  for (int thisReading = 0; thisReading < numReadings; thisReading++) {
+    readings[thisReading] = 0;
+  }
 }
  
 void loop(void) {
   fsrReading = analogRead(fsrPin);  
- 
+
+  total = total - readings[readIndex];
+
+  readings[readIndex] = fsrReading;
+
+  total = total + readings[readIndex];
+  readIndex = readIndex + 1;
+
+  if (readIndex >= numReadings) {
+    readIndex = 0;
+  }
+
+  average = total / numReadings;
+  
+  Serial.print(fsrReading);
+  Serial.print(" - Average:");
+  Serial.println(average);
+  delay(2000);
+
+  if(Serial.available()>0) {
+    delay(3);
+    char c = Serial.read();
+    readString+= c;
+  }
+  if (readString.length() >0) {
+    Serial.println(readString);
+    if (readString == "1")
+    {
+      digitalWrite(ledPin, HIGH); 
+    }
+    if (readString == "0")
+    {
+      digitalWrite(ledPin, LOW);
+    }
+  readString="";
+  }
+}
+
+/*
   Serial.print("Analog reading = ");
   Serial.print(fsrReading);     // the raw analog reading
- 
  
   if (fsrReading == 0) {
     Serial.println(" - No pressure");
@@ -30,27 +78,7 @@ void loop(void) {
     Serial.println(" - Big squeeze");
   }
   delay(1000);
-
-//  if(Serial.available()>0) {
-//    delay(3);
-//    char c = Serial.print();
-//    char 
-//    readString+= c;
-//  }
-//  if (readString.length() >0) {
-//    Serial.println(readString);
-    if (fsrReading > 150)
-    {
-      digitalWrite(ledPin, HIGH); 
-    }
-    if (fsrReading == 0)
-    {
-      digitalWrite(ledPin, LOW);
-    }
-  readString="";
-  }
-
-
+*/
 
 
 /* FSR testing sketch.
