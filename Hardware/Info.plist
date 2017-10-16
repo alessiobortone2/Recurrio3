@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>APIKey</key>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjA3NzY0NGMxYTVkMzQxYmFiOWI1YTY5YTE5ZmMxNWQ5IiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi5jOGVkY2YxMzFiZTU0Y2RkYjdkYmM5YTllZjgxYzc2NiIsImJ1bmRsZVNlZWRJZCI6Im5pY2sub3R0ZXJAaG90bWFpbC5jby51ayIsImJ1bmRsZUlkIjoibmljay5vdHRlckBob3RtYWlsLmNvLnVrIiwiaXNzIjoiQW1hem9uIiwidHlwZSI6IkFQSUtleSIsImFwcFZhcmlhbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC4wYmZlYzczMmQyNzI0MmU3ODJiYTQ1Y2EyMTJlOWMzYSIsInRydXN0UG9vbCI6bnVsbCwiYXBwSWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuMGJmZWM3MzJkMjcyNDJlNzgyYmE0NWNhMjEyZTljM2EiLCJpZCI6IjJiOTAwNmQ3LWIyN2ItMTFlNy04M2IyLTAxMWEyNzgzZTkzMCIsImlhdCI6IjE1MDgxNjI3NzM5NzIifQ==.FvxxDyJb4lRRWjpotK8tdsMwC/RVYieP06P0P9K7oe1dETWWdBrviT5G56kHy4XB8+4j4BUJxt7MdoN++18p/CFog4mIqgoidq6M5QXdHrzjH9H99DOhJ1SzgSjPtt0A6e73Ic/mT+P5yIoyHbj+C/Yge1Mj4Scj8WOPJnw/w4cErE5faU0zLNzWMgm0Gdmm39q0PsSUu7TnTQSlqjsPMHTa1OvsOpGyhJlxePSx0u53D8qeAfhZ4blcTV6OsXoS/GH3VZCvU4V5M7y3j3DXHYQDg+Qa81If8wjOOUex8FmzML/SlhJygR5a8Kz24VT9P8GFPxgAphBJawuDXZoz0w==</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -33,6 +35,17 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>amzn.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-amzn.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</dict>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
