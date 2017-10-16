@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import LoginWithAmazon
 
 class ViewController: UIViewController {
     
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
     @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var loginWithAmazonBtn: UIButton!
+    
+    @IBAction func onClickLoginWithAmazonBtn(_ sender: Any) {
+        LoginWithAmazonProxy.sharedInstance.login(delegate: self)
+    }
+    
+    func requestDidSucceed(_ apiResult: APIResult) {
+        if (apiResult.api == API.authorizeUser) {
+            AIMobileLib.getAccessToken(forScopes: Settings.Credentials.SCOPES, withOverrideParams: nil, delegate: self)
+        }
+        else {
+            print("Success! Token: \(apiResult.result)")
+        }
+    }
+    
+    func requestDidFail(_ errorResponse: APIError) {
+        print("Error: \(errorResponse.error.message)")
+    }
     
     @IBAction func startButton(_ sender: Any) {
         productArray[myIndex].currentWeight -= 5
