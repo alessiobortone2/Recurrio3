@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		867AE2D31F95114200ABE6D2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AE2D21F95114200ABE6D2 /* Product.swift */; };
 		867AE2D51F95137F00ABE6D2 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */; };
+		BEF03BE31F952DAB00E3B344 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF03BE21F952DAB00E3B344 /* ProductViewController.swift */; };
 		FA5AB96B1B77A30F007443C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AB96A1B77A30F007443C8 /* AppDelegate.swift */; };
 		FA5AB9701B77A30F007443C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5AB96E1B77A30F007443C8 /* Main.storyboard */; };
 		FA5AB9721B77A30F007443C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5AB9711B77A30F007443C8 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		867AE2D21F95114200ABE6D2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		BEF03BE21F952DAB00E3B344 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FA5AB9651B77A30E007443C8 /* Serial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5AB9691B77A30F007443C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5AB96A1B77A30F007443C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				FA62F58B1B8B85B3000479B6 /* MBProgressHUD.h */,
 				FA62F58C1B8B85B3000479B6 /* MBProgressHUD.m */,
 				FA5AB96E1B77A30F007443C8 /* Main.storyboard */,
+				BEF03BE21F952DAB00E3B344 /* ProductViewController.swift */,
 				867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */,
 				FA5AB9731B77A30F007443C8 /* LaunchScreen.xib */,
 				FA5AB9711B77A30F007443C8 /* Images.xcassets */,
@@ -182,7 +185,7 @@
 				TargetAttributes = {
 					FA5AB9641B77A30E007443C8 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = P8QAMBD6UX;
+						DevelopmentTeam = QUD932CWJ6;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -245,6 +248,7 @@
 				FA755D301B78B8FE00A902FE /* ScannerViewController.swift in Sources */,
 				FA62F58D1B8B85B3000479B6 /* MBProgressHUD.m in Sources */,
 				867AE2D51F95137F00ABE6D2 /* ProductTableViewController.swift in Sources */,
+				BEF03BE31F952DAB00E3B344 /* ProductViewController.swift in Sources */,
 				867AE2D31F95114200ABE6D2 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,12 +391,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex van der Lugt (B22Z7NLA6E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8QAMBD6UX;
+				DEVELOPMENT_TEAM = QUD932CWJ6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "HM10 Serial/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = denis.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willjsporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -410,12 +414,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex van der Lugt (B22Z7NLA6E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8QAMBD6UX;
+				DEVELOPMENT_TEAM = QUD932CWJ6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "HM10 Serial/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = denis.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willjsporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -11,32 +11,12 @@ import CoreBluetooth
 import QuartzCore
 
 
-var productDescriptions = ["Mayonnaise is Will's Favourite", "Nick loves milk", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian" ]
-
-let product1 = Product(initialWeight: 50.0, name: "Mayonnaise", productDesc: productDescriptions[0])
-let product2 = Product(initialWeight: 150.0, name: "Milk", productDesc: productDescriptions[1])
-let product3 = Product(initialWeight: 100.0, name: "Hendricks", productDesc: productDescriptions[2])
-let product4 = Product(initialWeight: 70.0, name: "Wine", productDesc: productDescriptions[3])
-
-var productArray  : [Product] = [product1, product2, product3, product4]
-
-var myIndex = 0
-
 // MARK: - Table view data source
 
 
-final class SerialViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate,  BluetoothSerialDelegate {
+final class SerialViewController: UIViewController, UITextFieldDelegate,  BluetoothSerialDelegate {
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return 3
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        return cell
-    }
+
     //MARK: IBOutlets
     
     @IBOutlet weak var mainTextView: UITextView!
