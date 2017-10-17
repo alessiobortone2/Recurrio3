@@ -31,7 +31,7 @@ class ProductTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let percentageMeasure = String(Int(productArray[indexPath.row].currentWeight/productArray[indexPath.row].initialWeight*100))
+        var percentageMeasure = String(Int(productArray[indexPath.row].currentWeight/productArray[indexPath.row].initialWeight*100))
         cell.textLabel?.text = productArray[indexPath.row].name + " " + percentageMeasure + "%"
         
         return cell
@@ -39,6 +39,7 @@ class ProductTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         myIndex = indexPath.row
+        productArray[myIndex].updateWeight()
         performSegue(withIdentifier: "IndividualProductSegue", sender: self)
     }
 }

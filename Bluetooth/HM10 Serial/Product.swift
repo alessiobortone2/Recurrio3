@@ -12,7 +12,7 @@ class Product {
     
     // MARK: - State variables
     let name, productDesc: String
-    let initialWeight: Float
+    var initialWeight: Float
     var currentWeight: Float
     
     // MARK: - Initializer
@@ -27,8 +27,15 @@ class Product {
 
 // MARK: - Public Methods
 extension Product {
-    func updateWeight(weight: Float) {
-        self.currentWeight = weight
+    func updateWeight() {
+        if weightData != [] {
+            self.currentWeight = weightData.last!
+            if weightData.max()! > self.initialWeight {
+                self.initialWeight = weightData.max()!
+            }
+        }
     }
 }
+
+//calibrating the scales
 
