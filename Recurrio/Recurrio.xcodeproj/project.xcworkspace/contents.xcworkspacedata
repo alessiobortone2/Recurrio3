@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HM10 Serial.xcodeproj">
+      location = "self:../RecurrioTest">
    </FileRef>
 </Workspace>

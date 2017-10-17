@@ -46,7 +46,7 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
     }
     
     
-    func reloadView() {
+    @objc func reloadView() {
         // in case we're the visible view again
         serial.delegate = self
         

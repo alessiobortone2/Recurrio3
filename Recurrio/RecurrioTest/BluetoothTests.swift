@@ -1,3 +1,4 @@
+
 //
 //  HM10_SerialTests.swift
 //  HM10 SerialTests
@@ -9,7 +10,7 @@
 import UIKit
 import XCTest
 
-class HM10_SerialTests: XCTestCase {
+class BluetoothTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
