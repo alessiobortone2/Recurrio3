@@ -11,6 +11,11 @@
 		7D0F23621F961285008955DE /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0F23611F961284008955DE /* LoginWithAmazon.framework */; };
 		7D0F23641F9612A4008955DE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0F23631F9612A3008955DE /* Security.framework */; };
 		7D0F23661F9612AC008955DE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0F23651F9612AC008955DE /* SafariServices.framework */; };
+		7D0F236B1F9627F2008955DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0F236A1F9627F2008955DE /* CoreGraphics.framework */; };
+		7D0F23731F962FFD008955DE /* AMZNLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F236E1F962FFC008955DE /* AMZNLoginController.m */; };
+		7D0F23741F962FFD008955DE /* btnLWA_gold_209x48_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0F236F1F962FFC008955DE /* btnLWA_gold_209x48_pressed.png */; };
+		7D0F23751F962FFD008955DE /* btnLWA_gold_209x48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0F23701F962FFD008955DE /* btnLWA_gold_209x48.png */; };
+		7D0F23761F962FFD008955DE /* AMZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F23711F962FFD008955DE /* AMZNAppDelegate.m */; };
 		7D7592AE1F8BD0EA0043C543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592AD1F8BD0EA0043C543 /* AppDelegate.swift */; };
 		7D7592B01F8BD0EA0043C543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7592AF1F8BD0EA0043C543 /* ViewController.swift */; };
 		7D7592B31F8BD0EA0043C543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7592B11F8BD0EA0043C543 /* Main.storyboard */; };
@@ -58,6 +63,14 @@
 		7D0F23631F9612A3008955DE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7D0F23651F9612AC008955DE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		7D0F23681F961671008955DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		7D0F236A1F9627F2008955DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D0F236C1F962FFB008955DE /* Hardware-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hardware-Bridging-Header.h"; sourceTree = "<group>"; };
+		7D0F236D1F962FFC008955DE /* AMZNAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMZNAppDelegate.h; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/AMZNAppDelegate.h"; sourceTree = "<group>"; };
+		7D0F236E1F962FFC008955DE /* AMZNLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMZNLoginController.m; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/AMZNLoginController.m"; sourceTree = "<group>"; };
+		7D0F236F1F962FFC008955DE /* btnLWA_gold_209x48_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnLWA_gold_209x48_pressed.png; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/btnLWA_gold_209x48_pressed.png"; sourceTree = "<group>"; };
+		7D0F23701F962FFD008955DE /* btnLWA_gold_209x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnLWA_gold_209x48.png; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/btnLWA_gold_209x48.png"; sourceTree = "<group>"; };
+		7D0F23711F962FFD008955DE /* AMZNAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMZNAppDelegate.m; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/AMZNAppDelegate.m"; sourceTree = "<group>"; };
+		7D0F23721F962FFD008955DE /* AMZNLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMZNLoginController.h; path = "Amazon-iOS-SDKs/LoginWithAmazon/examples/SampleLoginWithAmazonApp/LoginWithAmazonSample/LoginWithAmazonSample/AMZNLoginController.h"; sourceTree = "<group>"; };
 		7D7592AA1F8BD0EA0043C543 /* Hardware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hardware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7592AD1F8BD0EA0043C543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D7592AF1F8BD0EA0043C543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0F236B1F9627F2008955DE /* CoreGraphics.framework in Frameworks */,
 				7D0F23661F9612AC008955DE /* SafariServices.framework in Frameworks */,
 				7D0F23641F9612A4008955DE /* Security.framework in Frameworks */,
 				7D0F23621F961285008955DE /* LoginWithAmazon.framework in Frameworks */,
@@ -111,6 +125,7 @@
 		2BF19333D2FC04AA9960479C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D0F236A1F9627F2008955DE /* CoreGraphics.framework */,
 				7D0F23651F9612AC008955DE /* SafariServices.framework */,
 				7D0F23631F9612A3008955DE /* Security.framework */,
 				7D0F23611F961284008955DE /* LoginWithAmazon.framework */,
@@ -157,11 +172,18 @@
 				BEAC4F3B1F8E6BBA0084533E /* Product.swift */,
 				7D7592AF1F8BD0EA0043C543 /* ViewController.swift */,
 				86AEED0C1F8CE60000E67A08 /* TableViewController.swift */,
+				7D0F236D1F962FFC008955DE /* AMZNAppDelegate.h */,
+				7D0F23711F962FFD008955DE /* AMZNAppDelegate.m */,
+				7D0F23721F962FFD008955DE /* AMZNLoginController.h */,
+				7D0F236E1F962FFC008955DE /* AMZNLoginController.m */,
+				7D0F236F1F962FFC008955DE /* btnLWA_gold_209x48_pressed.png */,
+				7D0F23701F962FFD008955DE /* btnLWA_gold_209x48.png */,
 				7D7592B11F8BD0EA0043C543 /* Main.storyboard */,
 				7D7592B41F8BD0EA0043C543 /* Assets.xcassets */,
 				7D7592B61F8BD0EA0043C543 /* LaunchScreen.storyboard */,
 				7D0F23681F961671008955DE /* Info.plist */,
 				7D0F23671F9615A3008955DE /* Supporting Files */,
+				7D0F236C1F962FFB008955DE /* Hardware-Bridging-Header.h */,
 			);
 			path = Hardware;
 			sourceTree = "<group>";
@@ -274,6 +296,7 @@
 				TargetAttributes = {
 					7D7592A91F8BD0EA0043C543 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					7D7592BD1F8BD0EA0043C543 = {
@@ -314,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7592B81F8BD0EA0043C543 /* LaunchScreen.storyboard in Resources */,
+				7D0F23741F962FFD008955DE /* btnLWA_gold_209x48_pressed.png in Resources */,
 				7D7592B51F8BD0EA0043C543 /* Assets.xcassets in Resources */,
 				7D7592B31F8BD0EA0043C543 /* Main.storyboard in Resources */,
+				7D0F23751F962FFD008955DE /* btnLWA_gold_209x48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +515,8 @@
 				7D7592B01F8BD0EA0043C543 /* ViewController.swift in Sources */,
 				BEAC4F3C1F8E6BBA0084533E /* Product.swift in Sources */,
 				86AEED0D1F8CE60000E67A08 /* TableViewController.swift in Sources */,
+				7D0F23731F962FFD008955DE /* AMZNLoginController.m in Sources */,
+				7D0F23761F962FFD008955DE /* AMZNAppDelegate.m in Sources */,
 				7D7592AE1F8BD0EA0043C543 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +690,7 @@
 			baseConfigurationReference = D6C194D94763F628970EFBCF /* Pods-Hardware.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A28QWYC5Y4;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -671,8 +699,10 @@
 				);
 				INFOPLIST_FILE = Hardware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = recurrio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = "alessiobortone2-gmail.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hardware/Hardware-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -683,6 +713,7 @@
 			baseConfigurationReference = F7A5B081ADB38F255AB3285D /* Pods-Hardware.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A28QWYC5Y4;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -691,8 +722,9 @@
 				);
 				INFOPLIST_FILE = Hardware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = recurrio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = "alessiobortone2-gmail.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hardware/Hardware-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
