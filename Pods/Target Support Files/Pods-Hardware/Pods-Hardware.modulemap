@@ -1,6 +1,0 @@
-framework module Pods_Hardware {
-  umbrella header "Pods-Hardware-umbrella.h"
-
-  export *
-  module * { export * }
-}
