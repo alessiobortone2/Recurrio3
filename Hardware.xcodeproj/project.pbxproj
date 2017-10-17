@@ -57,13 +57,13 @@
 		7D0F23611F961284008955DE /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = "Hardware/Amazon-iOS-SDKs/LoginWithAmazon/LoginWithAmazon.framework"; sourceTree = "<group>"; };
 		7D0F23631F9612A3008955DE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7D0F23651F9612AC008955DE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		7D0F23681F961671008955DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		7D7592AA1F8BD0EA0043C543 /* Hardware.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hardware.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7592AD1F8BD0EA0043C543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D7592AF1F8BD0EA0043C543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D7592B21F8BD0EA0043C543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D7592B41F8BD0EA0043C543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D7592B71F8BD0EA0043C543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7D7592B91F8BD0EA0043C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D7592BE1F8BD0EA0043C543 /* HardwareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardwareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7592C21F8BD0EA0043C543 /* HardwareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareTests.swift; sourceTree = "<group>"; };
 		7D7592C41F8BD0EA0043C543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +121,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D0F23671F9615A3008955DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		7D7592A11F8BD0E90043C543 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +160,8 @@
 				7D7592B11F8BD0EA0043C543 /* Main.storyboard */,
 				7D7592B41F8BD0EA0043C543 /* Assets.xcassets */,
 				7D7592B61F8BD0EA0043C543 /* LaunchScreen.storyboard */,
-				7D7592B91F8BD0EA0043C543 /* Info.plist */,
+				7D0F23681F961671008955DE /* Info.plist */,
+				7D0F23671F9615A3008955DE /* Supporting Files */,
 			);
 			path = Hardware;
 			sourceTree = "<group>";
