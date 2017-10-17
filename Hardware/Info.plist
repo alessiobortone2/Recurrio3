@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>APIKey</key>
 	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjI4MGUzOGQyOWNiYjQzNTFhZTc3YTgzMGU1MTc1YjJhIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi5jMjBlMmE1ODNjNTM0YWNmYWYzN2FkYzcxOGYzOTE4MyIsImJ1bmRsZVNlZWRJZCI6ImFsZXNzaW9ib3J0b25lMkBnbWFpbC5jb20iLCJidW5kbGVJZCI6ImFsZXNzaW9ib3J0b25lMkBnbWFpbC5jb20iLCJpc3MiOiJBbWF6b24iLCJ0eXBlIjoiQVBJS2V5IiwiYXBwVmFyaWFudElkIjoiYW16bjEuYXBwbGljYXRpb24tY2xpZW50LjIzNzRlNWVhYmVjNzQ3YjY4MzlkYzNmZWFlM2E3NTIwIiwidHJ1c3RQb29sIjpudWxsLCJhcHBJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC4yMzc0ZTVlYWJlYzc0N2I2ODM5ZGMzZmVhZTNhNzUyMCIsImlkIjoiZThhOTVmNmEtYjMyNy0xMWU3LThiNjAtOTM4ZjEzYmJkOTQ5IiwiaWF0IjoiMTUwODIzNjk2NDY0OCJ9.fxmQcVDKjmp2f4K6ym1pe0DgGiUNFYzaReV46WzQq4BUTLlx7/un/SbLhLbKbTxkgLKRM7oarYhjhfhHBJLekTN+A7pRPVvwffotBWxfJKwd0sAg9ddtUx0xi63MnNyk69IbaaD5kJb2Ld+GtSnyoRQi9q0/MOmxLtVWhZzEPRxG2wmFzqwjm2om0vMvBFIWK0Z8nf6MTs1A53xdEtB/KigPsahZQvHl70Jxhq8lE5fRRG0i1A7uog0q4LtFAhUkAd/i3DORb/hurb2Bf/Y72CHufJlXD1DLRPt9QNzBFuO2N60p13P+HIF1+PF1rIGgFS+gOi0Bu2hLM+/ImFz06g==</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -18,6 +18,19 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>amzn.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-amzn.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
