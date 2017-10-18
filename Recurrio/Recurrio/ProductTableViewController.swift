@@ -18,17 +18,30 @@ var productArray  : [Product] = [product1, product2, product3, product4]
 
 var myIndex = 0
 
-
-
 // MARK: - Table view data source
 class ProductTableViewController: UITableViewController {
     
+    func sayHello(num: Int) {productArray[num].updateWeight()};
+    func secondFunction(timer: Timer) {
+        var value = timer.userInfo as! Int
+//        sayHello(num: value)
+        self.tableView.reloadData()
+        productArray[value].updateWeight()
+    }
+    
+    var helloWorldTimer = Timer()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return productArray.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        productArray[indexPath.row].updateWeight()
+//
+//        func productUpdate() {print(indexPath.row + 10)}
+        helloWorldTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ProductTableViewController.secondFunction), userInfo: indexPath.row, repeats: true)
+
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         var percentageMeasure = String(Int(productArray[indexPath.row].currentWeight/productArray[indexPath.row].initialWeight*100))
@@ -42,4 +55,14 @@ class ProductTableViewController: UITableViewController {
         productArray[myIndex].updateWeight()
         performSegue(withIdentifier: "IndividualProductSegue", sender: self)
     }
+    
+//    func handleRefresh(refreshControl: UIRefreshControl) {
+//        self.tableView.reloadData()
+//    }
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        self.refreshControl?.addTarget(self, action: #selector(self.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+//    }
+    
 }
