@@ -53,10 +53,10 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
         progressBar.setProgress(productLevel, animated: false)
         Percentage.text = String(Int(productLevel*100)) + "%"
     }
+
+    @IBOutlet weak var ProductDescription: UILabel!
     
-    
-    // MARK: Product Description
-    @IBOutlet weak var ProductDescription: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
