@@ -25,7 +25,8 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
     
     // MARK: Amazon login
     @IBAction func onClickLoginBtn(_ sender: Any) {
-        lwa.login(delegate: self)
+//        lwa.login(delegate: self)
+        UIApplication.shared.openURL(URL(string: "https://www.amazon.co.uk/innocent-smooth-orange-juice-1-35L/dp/B0132FLLY8/ref=sr_1_3?ie=UTF8&qid=1508342173&sr=8-3&ppw=fresh&keywords=orange+juice")!)
     }
     
     
