@@ -21,15 +21,13 @@ var myIndex = 0
 // MARK: - Table view data source
 class ProductTableViewController: UITableViewController {
     
-    func sayHello(num: Int) {productArray[num].updateWeight()};
-    func secondFunction(timer: Timer) {
+    func secondTimerHelper(timer: Timer) {
         var value = timer.userInfo as! Int
-//        sayHello(num: value)
         self.tableView.reloadData()
         productArray[value].updateWeight()
     }
     
-    var helloWorldTimer = Timer()
+    var refreshWeightTimer = Timer()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -39,7 +37,7 @@ class ProductTableViewController: UITableViewController {
         productArray[indexPath.row].updateWeight()
 //
 //        func productUpdate() {print(indexPath.row + 10)}
-        helloWorldTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ProductTableViewController.secondFunction), userInfo: indexPath.row, repeats: true)
+        refreshWeightTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ProductTableViewController.secondTimerHelper), userInfo: indexPath.row, repeats: true)
 
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
