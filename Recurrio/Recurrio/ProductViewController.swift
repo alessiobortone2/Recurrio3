@@ -14,6 +14,7 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
     
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
+   
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var ProductName: UILabel!
     @IBOutlet weak var Percentage: UILabel!
@@ -26,6 +27,7 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
     @IBAction func onClickLoginBtn(_ sender: Any) {
         lwa.login(delegate: self)
     }
+    
     
     func requestDidSucceed(_ apiResult: APIResult) {
         
