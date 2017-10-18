@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32F948981F9743140010A7FE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F948971F9743140010A7FE /* Security.framework */; };
+		32F9489A1F97431B0010A7FE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F948991F97431B0010A7FE /* SafariServices.framework */; };
+		32F9489C1F97490F0010A7FE /* LoginWithAmazonProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9489B1F97490F0010A7FE /* LoginWithAmazonProxy.swift */; };
+		32F9489E1F974AEB0010A7FE /* LoginSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F9489D1F974AEB0010A7FE /* LoginSettings.swift */; };
+		32F948A51F9768AD0010A7FE /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F948A31F97660E0010A7FE /* LoginWithAmazon.framework */; };
 		867AE2D31F95114200ABE6D2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AE2D21F95114200ABE6D2 /* Product.swift */; };
 		867AE2D51F95137F00ABE6D2 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */; };
 		869B9A361F96576500FB90DF /* RecurrioUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869B9A351F96576500FB90DF /* RecurrioUITest.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32F948971F9743140010A7FE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		32F948991F97431B0010A7FE /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		32F9489B1F97490F0010A7FE /* LoginWithAmazonProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAmazonProxy.swift; sourceTree = "<group>"; };
+		32F9489D1F974AEB0010A7FE /* LoginSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSettings.swift; sourceTree = "<group>"; };
+		32F948A31F97660E0010A7FE /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = "../../../../../../../Downloads/Amazon-iOS-SDKs/LoginWithAmazon/LoginWithAmazon.framework"; sourceTree = "<group>"; };
 		867AE2D21F95114200ABE6D2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		869B9A351F96576500FB90DF /* RecurrioUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurrioUITest.swift; sourceTree = "<group>"; };
@@ -59,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F948A51F9768AD0010A7FE /* LoginWithAmazon.framework in Frameworks */,
+				32F9489A1F97431B0010A7FE /* SafariServices.framework in Frameworks */,
+				32F948981F9743140010A7FE /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F948941F9742C90010A7FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32F948A31F97660E0010A7FE /* LoginWithAmazon.framework */,
+				32F948991F97431B0010A7FE /* SafariServices.framework */,
+				32F948971F9743140010A7FE /* Security.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA5AB95C1B77A30E007443C8 = {
 			isa = PBXGroup;
 			children = (
 				FA5AB9671B77A30E007443C8 /* Recurrio */,
 				FA5AB97D1B77A30F007443C8 /* RecurrioTests */,
 				FA5AB9661B77A30E007443C8 /* Products */,
+				32F948941F9742C90010A7FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +125,9 @@
 				FA62F58B1B8B85B3000479B6 /* MBProgressHUD.h */,
 				FA62F58C1B8B85B3000479B6 /* MBProgressHUD.m */,
 				FA5AB96E1B77A30F007443C8 /* Main.storyboard */,
+				32F9489B1F97490F0010A7FE /* LoginWithAmazonProxy.swift */,
 				BEF03BE21F952DAB00E3B344 /* ProductViewController.swift */,
+				32F9489D1F974AEB0010A7FE /* LoginSettings.swift */,
 				867AE2D41F95137F00ABE6D2 /* ProductTableViewController.swift */,
 				FA5AB9731B77A30F007443C8 /* LaunchScreen.xib */,
 				FA5AB9711B77A30F007443C8 /* Images.xcassets */,
@@ -188,7 +214,7 @@
 				TargetAttributes = {
 					FA5AB9641B77A30E007443C8 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = P8QAMBD6UX;
+						DevelopmentTeam = PVL8E99WWE;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -244,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32F9489E1F974AEB0010A7FE /* LoginSettings.swift in Sources */,
 				FA5AB98B1B77A398007443C8 /* BluetoothSerial.swift in Sources */,
+				32F9489C1F97490F0010A7FE /* LoginWithAmazonProxy.swift in Sources */,
 				FA73A0361B78FEB0005EFDB6 /* SerialViewController.swift in Sources */,
 				FA5AB96B1B77A30F007443C8 /* AppDelegate.swift in Sources */,
 				FA755D301B78B8FE00A902FE /* ScannerViewController.swift in Sources */,
@@ -320,6 +348,7 @@
 				DEVELOPMENT_TEAM = B22Z7NLA6E;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -370,6 +399,7 @@
 				DEVELOPMENT_TEAM = B22Z7NLA6E;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -390,16 +420,18 @@
 		FA5AB9851B77A30F007443C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex van der Lugt (B22Z7NLA6E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8QAMBD6UX;
+				DEVELOPMENT_TEAM = PVL8E99WWE;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Recurrio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Recurrio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recurrio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -413,16 +445,18 @@
 		FA5AB9861B77A30F007443C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex van der Lugt (B22Z7NLA6E)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8QAMBD6UX;
+				DEVELOPMENT_TEAM = PVL8E99WWE;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = Recurrio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Recurrio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.recurrio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -7,16 +7,46 @@
 //
 
 import UIKit
+import LoginWithAmazon
 
-class ProductViewController: UIViewController {
+
+class ProductViewController: UIViewController, AIAuthenticationDelegate {
     
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var ProductName: UILabel!
     @IBOutlet weak var Percentage: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var myImage: UIImageView!
     
+    let lwa = LoginWithAmazonProxy.sharedInstance
+    
+    // MARK: Amazon login
+    @IBAction func onClickLoginBtn(_ sender: Any) {
+        lwa.login(delegate: self)
+    }
+    
+    func requestDidSucceed(_ apiResult: APIResult) {
+        
+        switch(apiResult.api) {
+        case API.authorizeUser:
+            print("Authorized")
+            lwa.getAccessToken(delegate: self)
+        case API.getAccessToken:
+            print("Login successfully!")
+            loginBtn.isEnabled = false
+        default:
+            return
+        }
+    }
+    
+    func requestDidFail(_ errorResponse: APIError) {
+        print("Error: \(errorResponse.error.message)")
+    }
+    
+    
+    // MARK: Bluetooth Activated
     @IBAction func DecreaseButton(_ sender: Any) {
         productArray[myIndex].currentWeight -= 5
         productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
@@ -24,6 +54,8 @@ class ProductViewController: UIViewController {
         Percentage.text = String(Int(productLevel*100)) + "%"
     }
     
+    
+    // MARK: Product Description
     @IBOutlet weak var ProductDescription: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
