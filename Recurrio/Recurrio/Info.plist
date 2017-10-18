@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>APIKey</key>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LmFiMDQzM2FiYjk3NTQyZDRiYWYzZWExMDE4Y2NlMzgyIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi5jOGVkY2YxMzFiZTU0Y2RkYjdkYmM5YTllZjgxYzc2NiIsImJ1bmRsZVNlZWRJZCI6ImNvbS5yZWN1cnJpbyIsImJ1bmRsZUlkIjoiY29tLnJlY3VycmlvIiwiaXNzIjoiQW1hem9uIiwidHlwZSI6IkFQSUtleSIsImFwcFZhcmlhbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC5iNmY0OGQ2M2VkOTc0NjBjOTcwNTkyMmI2MWI1YjM2NiIsInRydXN0UG9vbCI6bnVsbCwiYXBwSWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuYjZmNDhkNjNlZDk3NDYwYzk3MDU5MjJiNjFiNWIzNjYiLCJpZCI6Ijc5ZGE0MTMyLWIzZjctMTFlNy04YjYwLTkzOGYxM2JiZDk0OSIsImlhdCI6IjE1MDgzMjYxMTQwODEifQ==.mJ4JLXQ3HbPI1EDXEomBEIVWsoX6aknp+xlAIGEVP576IiKw3gM2vKO/K/KEWFBQ8T/xWs/9xS4VuQROssbWtkH5UmC6zGblHAzlQH3MbwR9G1pGDA4m4OtB3xYCyWAxMzM+LNPSpIEtm3HI6EBJglSrSBpbl4kQi+YZIJmlcEZeVZh1kU+5hB2TmIwRlDe1+vRw0h6OtCydEzN59+adYT2ZOP5HJCYCT7E2xkkStzKZFHu0DpxJT0sq+02c+HXL3QO32ktvR4kFFwBDDlb8qrIDMC/LX8hHjGeL4MdPiLudEBjZ/jHNe5+XNTMgrrXDUbBake5Ezc13A2X9pUiVCg==</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -20,6 +22,17 @@
 	<string>0.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>amzn.com.recurrio</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-amzn.com.recurrio</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -40,19 +53,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-	</array>
-	<key>APIKey</key>
-	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjBjYTEzNjVhZTAxNDQxOTNhMDE2ZTczOGU3ZmZkOTlkIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi5jOGVkY2YxMzFiZTU0Y2RkYjdkYmM5YTllZjgxYzc2NiIsImJ1bmRsZVNlZWRJZCI6ImNvbS5yZWN1cnJpbyIsImJ1bmRsZUlkIjoiY29tLnJlY3VycmlvIiwiaXNzIjoiQW1hem9uIiwidHlwZSI6IkFQSUtleSIsImFwcFZhcmlhbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC40MWU4NzA2ODJmZWU0ODhhOGZmMzNmODFlMTQ3ODUyMyIsInRydXN0UG9vbCI6bnVsbCwiYXBwSWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuNDFlODcwNjgyZmVlNDg4YThmZjMzZjgxZTE0Nzg1MjMiLCJpZCI6ImM5MTA5OWJmLWIzZGEtMTFlNy05Nzc5LWU1MzEzMTM5MTQyYSIsImlhdCI6IjE1MDgzMTM3OTE1NjAifQ==.MpWXkCnUwVlYRgf35DyWCAtt1kdyR62scTR0oafr5cYB7twk8Vy3yh9TQiIBIFQMaQrymzMY/87RCJhfSH4d3CP2zsXYjaAUFiH9dTuxYesM5pZbVHk+jWKV1iZBBWi5G4EVjAR/dKj6+DGGEF/kxNHStEVrRjtf3on+dcBT7DaytrL4l7Pwkls9HWzS/aCzNwuvJ/YiFtYM2+nFsPpllofUaaZnAMj64ommnvCENcb1ysNctr1XGIw/VbQ06FgLX6WxbgOROMEQFlGWICvcWFquWOwAscXdWZH6ogxHMCf3wrlKJq6jAZdiEDI/G+skF7UkVxTcvwSEHIsQCZZf/A==</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLName</key>
-			<string>amzn.com.recurrio</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>amzn-amzn.com.recurrio</string>
-			</array>
-		</dict>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
