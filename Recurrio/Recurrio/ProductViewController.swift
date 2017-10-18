@@ -12,10 +12,15 @@ class ProductViewController: UIViewController {
     
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var ProductName: UILabel!
     @IBOutlet weak var Percentage: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var myImage: UIImageView!
+    
+    
+    @IBAction func onClickLoginBtn(_ sender: Any) {
+    }
     
     @IBAction func DecreaseButton(_ sender: Any) {
         productArray[myIndex].currentWeight -= 5
