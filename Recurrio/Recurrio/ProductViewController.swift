@@ -10,7 +10,7 @@ import UIKit
 import LoginWithAmazon
 
 
-class ProductViewController: UIViewController {
+class ProductViewController: UIViewController, AIAuthenticationDelegate {
     
     var productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
 
