@@ -24,7 +24,8 @@ class ProductViewController: UIViewController {
         Percentage.text = String(Int(productLevel*100)) + "%"
     }
     
-    @IBOutlet weak var ProductDescription: UITextView!
+    @IBOutlet weak var ProductDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
