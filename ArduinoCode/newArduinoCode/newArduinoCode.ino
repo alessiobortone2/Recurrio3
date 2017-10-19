@@ -26,6 +26,6 @@ void loop() {
     arrayIndex = (arrayIndex + 1) % 10;
     currentWeightReading = arrayTotal/100;
     Serial.println(currentWeightReading);
-    delay(100);
+    delay(50);
   }
 }
