@@ -11,6 +11,8 @@ import CoreBluetooth
 import QuartzCore
 
 
+
+
 // MARK: - Table view data source
 
 var weightData = [Float]();
@@ -23,7 +25,6 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
     @IBOutlet weak var mainTextView: UITextView!
     @IBOutlet weak var barButton: UIBarButtonItem!
     @IBOutlet weak var navItem: UINavigationItem!
-    @IBOutlet weak var HomeImage: UIImageView!
     
     
     //MARK: Functions
@@ -34,8 +35,8 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
         serial = BluetoothSerial(delegate: self)
         
         // UI
+        mainTextView.text = ""
         reloadView()
-        HomeImage.image = UIImage(named: "logo")
         
         NotificationCenter.default.addObserver(self, selector: #selector(SerialViewController.reloadView), name: NSNotification.Name(rawValue: "reloadStartViewController"), object: nil)
     }
@@ -55,7 +56,7 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
             barButton.tintColor = UIColor.red
             barButton.isEnabled = true
         } else if serial.centralManager.state == .poweredOn {
-            navItem.title = "Welcome"
+            navItem.title = "< Connect your Fridge!"
             barButton.title = "Connect"
             barButton.tintColor = view.tintColor
             barButton.isEnabled = true
