@@ -7,7 +7,7 @@
 //
 import UIKit
 
-var productDescriptions = ["Hendrick's Gin is a brand of gin produced by William Grant & Sons in Girvan, Scotland, and launched in 1999.[2] In addition to the traditional juniper infusion, Hendrick's uses Bulgarian rose and cucumber to add flavour.", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian", "..", "..", "..", "..", "..", "..", "..", "..", "..", "..", ".."]
+var productDescriptions = ["Hendrick's Gin is a brand of gin produced by William Grant & Sons in Girvan, Scotland, and launched in 1999. In addition to the traditional juniper infusion, Hendrick's uses Bulgarian rose and cucumber to add flavour.", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian", "..", "..", "..", "..", "..", "..", "..", "..", "..", "..", ".."]
 
 var percentages = ["83", "24", "95", "45", "20", "10", "37", "46", "93", "12", "5", "66", "69", "50"]
 
