@@ -19,12 +19,13 @@ void setup() {
 
 void loop() {
   fsrReading = analogRead(fsrPin); 
-  if (fsrReading != 0 ) {
+  if (fsrReading > 5 ) {
     arrayTotal -= averageReadings[arrayIndex];
     averageReadings[arrayIndex] = fsrReading;
     arrayTotal += averageReadings[arrayIndex];
-    arrayIndex ++;
-    currentWeightReading = arrayTotal/10;
+    arrayIndex = (arrayIndex + 1) % 10;
+    currentWeightReading = arrayTotal/100;
     Serial.println(currentWeightReading);
+    delay(1000);
   }
 }
