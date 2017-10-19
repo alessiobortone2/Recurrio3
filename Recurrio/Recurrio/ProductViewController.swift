@@ -50,12 +50,12 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
     
     
     // MARK: Bluetooth Activated
-    @IBAction func DecreaseButton(_ sender: Any) {
-        productArray[myIndex].currentWeight -= 5
-        productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
-        progressBar.setProgress(productLevel, animated: false)
-        Percentage.text = String(Int(productLevel*100)) + "%"
-    }
+//    @IBAction func DecreaseButton(_ sender: Any) {
+//        productArray[myIndex].currentWeight -= 5
+//        productLevel = productArray[myIndex].currentWeight/productArray[myIndex].initialWeight
+//        progressBar.setProgress(productLevel, animated: false)
+//        Percentage.text = String(Int(productLevel*100)) + "%"
+//    }
 
     @IBOutlet weak var ProductDescription: UILabel!
     

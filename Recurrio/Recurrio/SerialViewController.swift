@@ -22,7 +22,7 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
 
     //MARK: IBOutlets
     
-    @IBOutlet weak var mainTextView: UITextView!
+    @IBOutlet weak var homeImage: UIImageView!
     @IBOutlet weak var barButton: UIBarButtonItem!
     @IBOutlet weak var navItem: UINavigationItem!
     
@@ -35,7 +35,8 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
         serial = BluetoothSerial(delegate: self)
         
         // UI
-        mainTextView.text = ""
+        homeImage.image = UIImage(named: "logo")
+        
         reloadView()
         
         NotificationCenter.default.addObserver(self, selector: #selector(SerialViewController.reloadView), name: NSNotification.Name(rawValue: "reloadStartViewController"), object: nil)
@@ -56,7 +57,7 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
             barButton.tintColor = UIColor.red
             barButton.isEnabled = true
         } else if serial.centralManager.state == .poweredOn {
-            navItem.title = "< Connect your Fridge!"
+            navItem.title = "Welcome"
             barButton.title = "Connect"
             barButton.tintColor = view.tintColor
             barButton.isEnabled = true
@@ -66,11 +67,6 @@ final class SerialViewController: UIViewController, UITextFieldDelegate,  Blueto
             barButton.tintColor = view.tintColor
             barButton.isEnabled = false
         }
-    }
-    
-    func textViewScrollToBottom() {
-        let range = NSMakeRange(NSString(string: mainTextView.text).length - 1, 1)
-        mainTextView.scrollRangeToVisible(range)
     }
     
     
