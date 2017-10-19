@@ -23,8 +23,8 @@ class ProductTableViewController: UITableViewController {
     
     func secondTimerHelper(timer: Timer) {
         var value = timer.userInfo as! Int
-        self.tableView.reloadData()
         productArray[value].updateWeight()
+        self.tableView.reloadData()
     }
     
     var refreshWeightTimer = Timer()
