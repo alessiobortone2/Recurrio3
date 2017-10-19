@@ -45,59 +45,60 @@ void loop(void) {
   if (fsrReading != 0) {
   average = total / numReadings;
   }
-//  Serial.print(fsrReading);
-
-  if(average > 0 && average <= 100 && fsrReading != 0) {
-  Serial.println(100);
-  delay(1000);
-  flag = 0;
-  }
-   if(average > 100 && average <= 200 && fsrReading != 0) {
-  Serial.println(200);
-  delay(1000);
-  flag = 0;
-  }
-    if(average > 200 && average <= 300 && fsrReading != 0) {
-  Serial.println(300);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 300 && average <= 400 && fsrReading != 0) {
-  Serial.println(400);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 400 && average <= 500 && fsrReading != 0) {
-  Serial.println(500);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 500 && average <= 600 && fsrReading != 0) {
-  Serial.println(600);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 600 && average <= 700 && fsrReading != 0) {
-  Serial.println(700);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 700 && average <= 800 && fsrReading != 0) {
-  Serial.println(800);
-  delay(1000);
-  flag = 0;
-  }
-  if(average > 800 && average <= 900 && fsrReading != 0) {
-  Serial.println(900);
-  delay(1000);
-  flag = 0;
-  }
-    if(average > 900 && average <= 1000 && fsrReading != 0) {
-  Serial.println(1000);
-  delay(1000);
-  flag = 0;
-  }
+ Serial.print(average);
 }
+
+//  if(average > 0 && average <= 100 && fsrReading != 0) {
+//  Serial.println(100);
+//  delay(1000);
+//  flag = 0;
+//  }
+//   if(average > 100 && average <= 200 && fsrReading != 0) {
+//  Serial.println(200);
+//  delay(1000);
+//  flag = 0;
+//  }
+//    if(average > 200 && average <= 300 && fsrReading != 0) {
+//  Serial.println(300);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 300 && average <= 400 && fsrReading != 0) {
+//  Serial.println(400);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 400 && average <= 500 && fsrReading != 0) {
+//  Serial.println(500);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 500 && average <= 600 && fsrReading != 0) {
+//  Serial.println(600);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 600 && average <= 700 && fsrReading != 0) {
+//  Serial.println(700);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 700 && average <= 800 && fsrReading != 0) {
+//  Serial.println(800);
+//  delay(1000);
+//  flag = 0;
+//  }
+//  if(average > 800 && average <= 900 && fsrReading != 0) {
+//  Serial.println(900);
+//  delay(1000);
+//  flag = 0;
+//  }
+//    if(average > 900 && average <= 1000 && fsrReading != 0) {
+//  Serial.println(1000);
+//  delay(1000);
+//  flag = 0;
+//  }
+//}
 
 /*
   if(Serial.available()>0) {
