@@ -7,11 +7,11 @@
 //
 import UIKit
 
-var productDescriptions = ["Hendrick's Gin is a brand of gin produced by William Grant & Sons in Girvan, Scotland, and launched in 1999. In addition to the traditional juniper infusion, Hendrick's uses Bulgarian rose and cucumber to add flavour.", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian", "..", "..", "..", "..", "..", "..", "..", "..", "..", "..", ".."]
+var productDescriptions = ["Almond Drink. Creamy crushed almond is blended smoothly with rice, pure mountain spring water, and a dash of cold-pressed sunflower oil. Rice brings its own natural silky sweetness – so you won’t miss the usual thickeners, syrups or added sugars. It’s a naturally nutty almond milk.", "Denis can never be sober as the hangover will kill him", "Alessio loves a bit of wine and pizza... dare you to find a more stereotypical Italian", "..", "..", "..", "..", "..", "..", "..", "..", "..", "..", ".."]
 
 var percentages = ["83", "24", "95", "45", "20", "10", "37", "46", "93", "12", "5", "66", "69", "50"]
 
-let product1 = Product(initialWeight: 50.0, name: "Hendricks", productDesc: productDescriptions[0])
+let product1 = Product(initialWeight: 50.0, name: "Rude Health Almond Milk", productDesc: productDescriptions[0])
 let product2 = Product(initialWeight: 150.0, name: "Tonic", productDesc: productDescriptions[1])
 let product3 = Product(initialWeight: 100.0, name: "Cucumber", productDesc: productDescriptions[2])
 let product4 = Product(initialWeight: 140.0, name: "Wine", productDesc: productDescriptions[3])

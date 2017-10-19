@@ -66,7 +66,7 @@ class ProductViewController: UIViewController, AIAuthenticationDelegate {
         ProductName.text = productArray[myIndex].name
         Percentage.text = (String(Int(productLevel*100)) + "%")
         ProductDescription.text = productArray[myIndex].productDesc
-        myImage.image = UIImage(named: productArray[myIndex].name)
+        myImage.image = UIImage(named: "Hendricks")
         progressBar.setProgress(productLevel, animated: false)
     }
 
