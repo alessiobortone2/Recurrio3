@@ -17,7 +17,19 @@ Then `brew install swiftlint`
 
 ## Usage
 
-... (to be completed once app is working :)
+Once Arduino is correctly wired up, upload the Arduino code to the device through the Arduino IDE.
+
+Clone the repository and open Recurrio.xcodeproj with Xcode.
+
+Connect an iPhone or iPad to the computer and run the product on this device through the Xcode program.
+
+Enable your phone's bluetooth.
+
+Run the app and connect to the Arduino device to make use of the weight sensing functionality.
+
+## Credit for the work of others
+
+The code used in our bluetooth connection and the reception of data by the program was taken and adapted from <a href="https://github.com/hoiberg">Hoiberg</a>'s <a href="https://github.com/hoiberg/HM10-BluetoothSerial-iOS/">HM10 Bluetooth Serial iOS</a> app. Many thanks go to Hoiberg for the code.
 
 ## Running tests
 
